@@ -4,46 +4,108 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Me</title>
+    <script
+      src="https://kit.fontawesome.com/07b0d606d9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="about.css" />
   </head>
   <body>
+    <header id="header">
+      <nav class="navbar">
+        <div class="header-image">
+          <img
+            src="images/personal-logo.jpg"
+            height="100px"
+            width="100px"
+            alt="Logo"
+          />
+        </div>
+        <div class="header-right">
+          <ul id="sidemenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#header">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="header-humberger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="humberger-menu">
+          <div class="header-close">
+            <i class="fa-solid fa-close"></i>
+          </div>
+          <ul class="humberger-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="#header">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <main>
       <section id="about">
-        <div>
-          <img
-            src="images/Portfolio-Photo.jpg"
-            height="300px"
-            width="168.75px"
-            alt="Kalkidan Semre"
-          />
-          <h1>About Me</h1>
-          <p>
-            My name is Kalkidan Semre, a 3rd-year Software Engineering student
-            at AAU. I am passionate about technology, particularly frontend
-            development. I am working on various frontend projects and exploring
-            Mobile app development with frameworks like Flutter.
-          </p>
-          <h2>Skills</h2>
-          <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>React.js</li>
-            <li>UI/UX Design</li>
-          </ul>
-          <h2>Experience</h2>
-          <ul>
-            <li>Organizer at Google Developer Group at AAU</li>
-            <li>
-              Management team at AAiT Innovation Center, currently working on
-              innovative idea that can benefit the community.
-            </li>
-          </ul>
-          <h2>Education</h2>
-          <ul>
-            <li>Grade 1-3: Future Hope Generation School</li>
-            <li>Grade 3-12: South West Academy</li>
-            <li>Currently: Software Engineering at AAU</li>
-          </ul>
+        <div class="main-container">
+          <div class="container-1">
+            <img
+              class="about-image"
+              src="images/Portfolio-Photo.jpg"
+              alt="Kalkidan Semre"
+            />
+          </div>
+          <div class="container-2">
+            <div class="container-up">
+              <h1>About Me</h1>
+              <p>
+                My name is Kalkidan Semre, a 3rd-year Software Engineering
+                student at AAU. I am passionate about technology, particularly
+                frontend development. I am working on various frontend projects
+                and exploring Mobile app development with frameworks like
+                Flutter.
+              </p>
+            </div>
+            <div class="container-down">
+              <div class="options">
+                <div class="option active">
+                  <h2>Skills</h2>
+                </div>
+                <div class="option">
+                  <h2>Experience</h2>
+                </div>
+                <div class="option">
+                  <h2>Education</h2>
+                </div>
+              </div>
+              <div class="option-list">
+                <ul class="skill-hidden visible">
+                  <li>HTML, CSS, JavaScript</li>
+                  <li>React.js</li>
+                  <li>UI/UX Design</li>
+                </ul>
+
+                <ul class="skill-hidden">
+                  <li>Organizer at Google Developer Group at AAU</li>
+                  <li>
+                    Management team at AAiT Innovation Center, currently working
+                    on innovative idea that can benefit the community.
+                  </li>
+                </ul>
+
+                <ul class="skill-hidden">
+                  <li>Grade 1-3: Future Hope Generation School</li>
+                  <li>Grade 3-12: South West Academy</li>
+                  <li>Currently: Software Engineering at AAU</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
+    <script src="/script.js"></script>
   </body>
 </html>

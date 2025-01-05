@@ -4,19 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Services</title>
+    <script
+    src="https://kit.fontawesome.com/07b0d606d9.js"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="service.css" />
   </head>
   <body>
+    <header id="header">
+      <nav class="navbar">
+        <div class="header-image">
+          <img
+            src="images/personal-logo.jpg"
+            height="100px"
+            width="100px"
+            alt="Logo" />
+        </div>
+        <div class="header-right">
+          <ul id="sidemenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#header">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="header-humberger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="humberger-menu">
+          <div class="header-close">
+            <i class="fa-solid fa-close"></i>
+          </div>
+          <ul class="humberger-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#header">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <main id="services">
       <div class="container">
-        <h1>My Services</h1>
-        <section>
-          <img
+        <h1 class="service-header">My Services</h1>
+        <div class="main-container">
+          <section class="container-1">
+          <div class="container-in-1-1 container-half">
+            <img
             src="images/service-web-design.jpg"
             height="141px"
             width="300px"
             alt="Web Design Image"
           />
-          <article>
+          </div>
+          <div class="container-in-1-2">
+            <article>
             <h2>Web Design</h2>
             <p>
               I work in crafting visually appealing and functional web designs
@@ -27,16 +70,21 @@
             <a href="https://kalkidansemre-a.github.io/Restaurant-Website/"
               >Learn more</a
             >
-          </article>
+            </article>
+          </div>
+          
         </section>
-        <section>
-          <img
+        <section class="container-2">
+          <div class="container-in-2-1 container-half">
+            <img
             src="images/game-development.jpg"
             height="168"
             width="300"
             alt="Glowing-Pong Game Image"
           />
-          <article>
+          </div>
+          <div class="container-in-2-2">
+            <article>
             <h2>Game Development</h2>
             <p>
               I have been exploring web development within Unity using a
@@ -52,15 +100,20 @@
               >Learn more</a
             >
           </article>
+        </div>
+          
         </section>
-        <section>
-          <img
+        <section class="container-3">
+          <div class="container-in-3-1 container-half">
+            <img
             src="images/project-management.jpg"
             height="189"
             width="300"
             alt="App Design Image"
           />
-          <article>
+          </div>
+          <div class="container-in-3-2">
+            <article>
             <h2>Project Management</h2>
             <p>
               As a student, I have gained diverse experience in project
@@ -75,8 +128,11 @@
               >Learn more</a
             >
           </article>
+        </div>
+        </div>
         </section>
       </div>
     </main>
+    <script src="/script.js"></script>
   </body>
 </html>

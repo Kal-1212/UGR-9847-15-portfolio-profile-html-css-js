@@ -4,59 +4,120 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/07b0d606d9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="portfolio.css" />
   </head>
   <body>
+    <header id="header">
+      <nav class="navbar">
+        <div class="header-image">
+          <img
+            src="images/personal-logo.jpg"
+            height="100px"
+            width="100px"
+            alt="Logo"
+          />
+        </div>
+        <div class="header-right">
+          <ul id="sidemenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="#header">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="header-humberger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="humberger-menu">
+          <div class="header-close">
+            <i class="fa-solid fa-close"></i>
+          </div>
+          <ul class="humberger-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="#header">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <main id="portfolio">
       <div class="container">
-        <h1>My Work</h1>
-        <section>
-          <article>
-            <h2>Restaurant Website Design</h2>
-            <p>
-              I redesigned a website tailored for a high-standard restaurant
-              offering exceptional meals and outstanding quality, drawing
-              inspiration from a website that caught my attention.
-            </p>
-            <video controls width="640" height="360">
-              <source src="videos/Restaurant-Website.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </article>
-        </section>
-        <section>
-          <article>
-            <h2>Glowing-Pong Game</h2>
-            <p>
-              Glowing Pong is a two-player arcade game where each side controls
-              a paddle to prevent the ball from passing through. Use 'W' and 'S'
-              for the left paddle, and the up and down arrows for the right.
-              Score by outmaneuvering your opponent, simple, fast-paced, and
-              neon-lit
-            </p>
-            <video controls width="640" height="360">
-              <source src="videos/glowing-pong-game.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </article>
-        </section>
-        <section>
-          <article>
-            <h2>Team Management</h2>
-            <p>
-              I have experience in team management, particularly in organizing
-              events and workshops. The video below highlights programs I
-              coordinated alongside my team.
-            </p>
-            <video controls width="640" height="360">
-              <source
-                src="videos/telegram-bot-workshop and opening-event videos led by our team.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
-            </video>
-          </article>
-        </section>
+        <div class="container-up">
+          <h1>My Work</h1>
+        </div>
+        <div class="container-down">
+          <section class="container-1">
+            <article class="container-article">
+              <div class="container-inner">
+                <h2>Restaurant Website Design</h2>
+                <p>
+                  I redesigned a website tailored for a high-standard restaurant
+                  offering exceptional meals and outstanding quality, drawing
+                  inspiration from a website that caught my attention.
+                </p>
+              </div>
+              <div class="container-in-1-2 container-half container-second">
+                <video controls width="600" height="360">
+                  <source
+                    src="videos/Restaurant-Website.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </article>
+          </section>
+          <section class="container-2">
+            <article class="container-article">
+              <div class="container-inner">
+                <h2>Glowing-Pong Game</h2>
+                <p>
+                  Glowing Pong is a two-player arcade game where each side
+                  controls a paddle to prevent the ball from passing through.
+                  Use 'W' and 'S' for the left paddle, and the up and down
+                  arrows for the right. Score by outmaneuvering your opponent,
+                  simple, fast-paced, and neon-lit
+                </p>
+              </div>
+              <div class="container-in-2-2 container-half container-second">
+                <video controls width="640" height="360">
+                  <source src="videos/glowing-pong-game.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </article>
+          </section>
+          <section class="container-3">
+            <article class="container-article">
+              <div class="container-inner">
+                <h2>Team Management</h2>
+                <p>
+                  I have experience in team management, particularly in
+                  organizing events and workshops. The video below highlights
+                  programs I coordinated alongside my team.
+                </p>
+              </div>
+              <div class="container-in-3-2 container-half container-second">
+                <video controls width="640" height="360">
+                  <source
+                    src="videos/telegram-bot-workshop and opening-event videos led by our team.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </article>
+          </section>
+        </div>
       </div>
     </main>
+    <script src="/script.js"></script>
   </body>
 </html>

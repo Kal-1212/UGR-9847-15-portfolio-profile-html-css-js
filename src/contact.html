@@ -4,52 +4,129 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "BlHheJoPbnAiL37IB",
+        });
+      })();
+    </script>
+    <script
       src="https://kit.fontawesome.com/07b0d606d9.js"
       crossorigin="anonymous"
     ></script>
     <title>Contact Me</title>
+    <link rel="stylesheet" href="contact.css" />
   </head>
   <body>
+    <header id="header">
+      <nav class="navbar">
+        <div class="header-image">
+          <img
+            src="images/personal-logo.jpg"
+            height="100px"
+            width="100px"
+            alt="Logo"
+          />
+        </div>
+        <div class="header-right">
+          <ul id="sidemenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="#header">Contact</a></li>
+          </ul>
+        </div>
+        <div class="header-humberger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="humberger-menu">
+          <div class="header-close">
+            <i class="fa-solid fa-close"></i>
+          </div>
+          <ul class="humberger-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="#header">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <main id="contact">
       <div class="container">
         <section>
-          <h1>Contact Me</h1>
-          <div>
-            <p><i class="fa-solid fa-phone"></i><i>+251973001621</i></p>
+          <div class="in-contiainer">
+            <h1>Contact Me</h1>
+            <div>
+              <p><i class="fa-solid fa-phone"></i><i>+251973001621</i></p>
+            </div>
+            <div>
+              <p>
+                <i class="fa-regular fa-envelope"></i
+                ><i>semrekalkidan@gmail.com</i>
+              </p>
+            </div>
+            <div>
+              <a href="https://et.linkedin.com/in/kalkidan-semre-20Ag21"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://x.com/KalkidanAg1221"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="https://whatsapp.com"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <a href="https://t.me/thegirl2222"
+                ><i class="fa-brands fa-telegram"></i
+              ></a>
+            </div>
           </div>
-          <div>
-            <p>
-              <i class="fa-regular fa-envelope"></i
-              ><i>semrekalkidan@gmail.com</i>
-            </p>
-          </div>
-          <div>
-            <a href="https://et.linkedin.com/in/kalkidan-semre-20Ag21"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-            <a href="https://x.com/KalkidanAg1221"
-              ><i class="fa-brands fa-x-twitter"></i
-            ></a>
-            <a href="https://whatsapp.com"
-              ><i class="fa-brands fa-whatsapp"></i
-            ></a>
-            <a href="https://t.me/thegirl2222"
-              ><i class="fa-brands fa-telegram"></i
-            ></a>
-          </div>
+
           <br />
           <button
             onclick="window.location.href='documents/kalkidan-semre-CV.pdf'"
-            class="btn"
+            class="btn in-contiainer"
             download
           >
             Download CV
           </button>
+          <form id="contactForm">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <button type="button" class="submit-btn" onclick="sendMail()">
+              Submit
+            </button>
+          </form>
         </section>
       </div>
       <footer>
         <p>© 2024 Kalkidan Semre, All rights reserved</p>
       </footer>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
