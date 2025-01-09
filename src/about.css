@@ -70,6 +70,7 @@ nav ul li a:hover {
   right: -200px;
   opacity: 0;
   transition: right 0.3s ease, opacity 0.3s ease;
+  z-index: 3;
 }
 
 .humberger-menu.visible {
