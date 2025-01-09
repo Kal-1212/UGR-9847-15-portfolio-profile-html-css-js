@@ -47,12 +47,12 @@ options.forEach((option) => {
   });
 });
 
-// Remove 'visible' class on window resize if width <= 768px
+
 window.addEventListener("resize", () => {
   if (window.innerWidth <= 768) {
     sideMenu.classList.remove("visible");
 
-    // Remove 'visible' class from other sections if required
+    
     const sections = document.querySelectorAll(".skill-hidden");
     sections.forEach((section) => {
       section.classList.remove("visible");
